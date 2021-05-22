@@ -1,1 +1,3 @@
-<h3>Mail List Component</h3>
+<ng-container *ngFor="let list of mailList">
+    <br><a (click)="getPreviewDetails(list)">{{list.sender_name}}</a>
+</ng-container>

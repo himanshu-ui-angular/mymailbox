@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MailBoxService } from '../../mail-box.service';
 
 @Component({
   selector: 'app-mail-preview',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MailPreviewComponent implements OnInit {
 
-  constructor() { }
+  public mailPreview: any = '';
+  constructor(private mailService: MailBoxService) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+    this.mailService.mailPreviewData$.subscribe(data => this.mailPreview = data);
   }
 
 }

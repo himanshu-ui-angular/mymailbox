@@ -1,0 +1,18 @@
+#main {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #c3c3c3;
+    height: 96vh;
+}
+  
+#main div:nth-of-type(1) {flex: 0 0 20%;}
+#main div:nth-of-type(2) {flex: 0 0 30%; overflow-y: scroll;}
+#main div:nth-of-type(3) {flex: 0 0 50%;}
+
+#footer {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    border: 1px solid #706767;
+}
+  

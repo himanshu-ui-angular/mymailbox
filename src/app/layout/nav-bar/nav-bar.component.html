@@ -1,1 +1,9 @@
-<h3>Nav Bar Component</h3>
+<div style="display:flex; flex-direction:column;background-color: rgb(30,144,255);height: 15vh;justify-content: center;
+align-items: center;" id="compose-continer">
+    <h2 style="color: white;">Compose</h2>
+</div>
+<div style="display: flex; flex-direction:column;" id="nav-bar-list">
+    <ng-container *ngFor="let data of folderData">
+        <br><a style="color: white;" (click)="getFolderList(data.folder_id)">{{data.folder_name}}</a>
+    </ng-container>
+</div>
