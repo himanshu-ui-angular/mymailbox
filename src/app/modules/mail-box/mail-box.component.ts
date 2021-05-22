@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MailBoxService } from './mail-box.service';
 
 @Component({
   selector: 'app-mail-box',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MailBoxComponent implements OnInit {
 
-  constructor() { }
+  constructor(private mailService: MailBoxService ) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+    this.mailService.getFolderData();
   }
-
+  
 }

@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app/modules/app-routing/app-routing.module';
 import { MailBoxModule } from './app/modules/mail-box/mail-box.module';
-import { CommonLayoutsModule } from './app/layout/common-layouts.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -12,6 +12,7 @@ import { CommonLayoutsModule } from './app/layout/common-layouts.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     MailBoxModule,
   ],
   providers: [],
