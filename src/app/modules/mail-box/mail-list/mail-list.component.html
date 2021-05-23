@@ -1,0 +1,29 @@
+<div *ngIf="mailList.length !== 0;else noMailList">
+    <ng-container *ngFor="let list of mailList;">
+        <a (click)="getPreviewDetails(list,list.mail_id)" [class.active-class]='selectedIndex === list.mail_id'>
+            <div class="mail-details">
+                <div class="header-details">
+                    <div class="flex-column">
+                        {{list.mail_subject}}
+                    </div>
+                    <div class="flex-column">
+                        <span class="dot" [class.message-unread]='!list.read_status'></span>
+                    </div>
+                </div>
+                <div class="header-details">
+                    <div class="flex-column">
+                        {{list.sender_name}}
+                    </div>
+                    <div class="flex-column">
+                        {{ list.mail_date | date }}  
+                    </div>
+                </div>
+            </div>
+        </a>
+    </ng-container>
+</div>
+<ng-template #noMailList>
+    <div class="no-mail-container">
+        <h3>Nothing To see here, great job!</h3>
+    </div>
+</ng-template>

@@ -1,0 +1,22 @@
+[
+  {
+    "folder_id": 1,
+    "folder_name": "Inbox",
+    "count_no" : 5
+  },
+  {
+    "folder_id": 2,
+    "folder_name": "Sent",
+    "count_no" : 0
+  },
+  {
+    "folder_id": 3,
+    "folder_name": "Drafts",
+    "count_no" : 0
+  },
+  {
+    "folder_id": 4,
+    "folder_name": "Trash",
+    "count_no" : 4
+  }
+]

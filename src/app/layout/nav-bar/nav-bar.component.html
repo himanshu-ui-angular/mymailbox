@@ -1,0 +1,17 @@
+<div class="header-info blue-background">
+    <h2 class="white-color">Compose</h2>
+</div>
+<div class="flex-column" style="padding: 2em;" id="nav-bar-list">
+    <ng-container *ngFor="let data of folderData">
+        <a class="white-color" style="margin-top:2em" (click)="getFolderList(data.folder_id)">
+            <div class="header-details">
+                <div class="flex-column">
+                    {{data.folder_name}}
+                </div>
+                <div class="flex-column">
+                    {{data.count_no}}  
+                </div>
+            </div>
+        </a>
+    </ng-container>
+</div>
