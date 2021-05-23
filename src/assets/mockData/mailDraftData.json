@@ -1,34 +1,3 @@
 [
-    {
-      "mail_id": "123",
-	    "folder_id": "3",
-      "sender_name": "Draft Data Folder",
-      "mail_subject": "lacus aliquet dis",
-      "mail_Description": "Consequat per mi feugiat, vulputate fermentum ac aptent hac dis odio. Tellus ultrices erat maecenas vestibulum magna bibendum! Fermentum fringilla aliquam praesent a ad fringilla. Sed ut porta fermentum dis facilisi neque? Consectetur, vehicula lacus velit. Vitae curae; lobortis ac urna suspendisse mi volutpat eros molestie nisi. Amet adipiscing aliquet, eleifend ridiculus scelerisque cras est quam tincidunt. Nostra risus sociis.",
-	    "mail_date": "Jan 03, 2015"
-    },
-    {
-	    "mail_id": "123",
-	    "folder_id": "3",
-      "sender_name": "Peg Legge",
-      "mail_subject": "Euismod a rutrum montes",
-      "mail_Description": "Tellus quam, nostra ut. Sollicitudin nullam lectus erat rutrum accumsan cubilia magnis convallis ut. Neque erat curabitur euismod dictumst eget dui. Venenatis in montes ornare dapibus. Vestibulum vivamus, congue inceptos ut aliquet sit etiam euismod nam? Nunc hendrerit dictum senectus euismod fusce cras himenaeos? Integer leo nullam lacinia aliquet fermentum purus molestie nulla eleifend. Consectetur nascetur auctor tempor. Nam tempor iaculis et massa.",
-	    "mail_date": "Jan 03, 2015"
-    },
-    {
-	    "mail_id": "123",
-	    "folder_id": "3",
-      "sender_name": "Patty O'Furniture",
-      "mail_subject": "Sollicitudin neque phasellus",
-      "mail_Description": "Consectetur ante feugiat placerat, lacus aliquet dis. Feugiat imperdiet sociosqu eget consectetur ornare risus volutpat habitasse laoreet cursus nisl at. Sollicitudin neque phasellus, parturient bibendum. Ultricies lobortis conubia imperdiet sodales tellus? Netus sociis in torquent ultricies sed. Enim massa proin eget orci inceptos suscipit parturient.",
-	    "mail_date": "Jan 03, 2015"
-    },
-    {
-	    "mail_id": "123",
-	    "folder_id": "3",
-      "sender_name": "Aida Bugg",
-      "mail_subject": "Tempor ligula nostra!",
-      "mail_Description": "Parturient penatibus a magnis. Ante senectus cras pretium metus risus dignissim sociosqu ullamcorper. Habitant porttitor penatibus eu augue mi, quisque fermentum tincidunt in viverra donec. Fames vulputate ad volutpat nam enim sociosqu.",
-	    "mail_date": "Jan 03, 2015"
-    }
+    
 ]

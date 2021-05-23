@@ -12,6 +12,7 @@ export class MailBoxComponent implements OnInit {
 
   ngOnInit(){
     this.mailService.getFolderData();
+    this.mailService.getListData();
   }
   
 }

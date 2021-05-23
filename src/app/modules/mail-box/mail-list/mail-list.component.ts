@@ -1,4 +1,5 @@
 import { Component, OnChanges, OnDestroy, OnInit } from '@angular/core';
+import { MailListInterface } from '../mail-box-interface';
 import { MailBoxService } from '../mail-box.service';
 
 @Component({
@@ -8,15 +9,21 @@ import { MailBoxService } from '../mail-box.service';
 })
 export class MailListComponent implements OnInit, OnDestroy {
 
-  public mailList: any = [];
+  public mailList: Array<MailListInterface> = [];
+  public selectedIndex!: number;
+  
   constructor(private mailService: MailBoxService) { }
 
   ngOnInit(){
     this.mailService.mailListData$.subscribe(mailData => this.mailList = mailData);
   }
 
-  getPreviewDetails(mailData: any){
+  getPreviewDetails(mailData: MailListInterface, isMailActive: number){
     this.mailService.mailPreviewData$.next(mailData);
+    this.selectedIndex!;
+    console.log(this.selectedIndex);
+    this.selectedIndex = isMailActive;
+    console.log(this.selectedIndex);
   }
 
   ngOnDestroy() {

@@ -1,1 +1,24 @@
-<div>{{mailPreview.mail_Description}}</div>
+<ng-container *ngIf="mailPreview">
+    <div class="header-info grey-background" id="compose-continer">
+        <div class="header-details">
+            <div class="flex-column">
+                <strong>{{mailPreview.mail_subject}}</strong>
+            </div>
+            <div class="flex-column">
+                
+            </div>
+        </div>
+        <div class="header-details">
+            <div class="flex-column">
+                {{mailPreview.sender_name}}
+            </div>
+            <div class="flex-column">
+                {{mailPreview.mail_date | date:'MMM d, y - h:mm a'}}
+            </div>
+        </div>
+    </div>
+    <div class="flex-column">
+            <p style="padding: 10px;">{{mailPreview.mail_description}}</p>
+    </div>
+</ng-container>
+
