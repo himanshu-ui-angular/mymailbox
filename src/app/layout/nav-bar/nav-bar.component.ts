@@ -1,4 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { MailFolderInterface } from 'src/app/modules/mail-box/mail-box-interface';
 import { MailBoxService } from 'src/app/modules/mail-box/mail-box.service';
 
 @Component({
@@ -6,9 +7,10 @@ import { MailBoxService } from 'src/app/modules/mail-box/mail-box.service';
   templateUrl: './nav-bar.component.html',
   styleUrls: ['./nav-bar.component.css']
 })
+
 export class NavBarComponent implements OnInit, OnDestroy {
 
-  public folderData: any = [];
+  public folderData: Array<MailFolderInterface> = [];
   constructor(private mailService: MailBoxService) { }
 
   ngOnInit(){

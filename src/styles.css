@@ -1,10 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
-* {
-    margin: 0;
-    padding: 0;
-}
-
+* { margin: 0;padding: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   
 a {
     cursor: pointer;
+}
+
+.header-info {
+    display:flex; 
+    flex-direction:column;
+    height: 12vh;
+    justify-content: center;
+}
+
+.blue-background {
+    background-color: rgb(30,144,255);
+    align-items: center;
+}
+
+.grey-background {
+    background-color: rgb(245,245,245);
+}
+
+.grey-color{
+    color: rgb(128,128,128);
+}
+
+.white-color{
+    color: rgb(255,255,255);
+}
+
+.header-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.mail-details{
+    display:flex; 
+    flex-direction:column;
+    border: 1px solid rgb(245,245,245);
+    height: 15vh;
+    justify-content: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.no-mail-container{
+    display:flex;
+    flex-direction:column;
+    background-color: rgb(245,245,245);
+    justify-content: center;
+    align-items: center;
+    height: 96vh;
 }
